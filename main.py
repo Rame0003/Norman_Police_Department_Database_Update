@@ -19,8 +19,8 @@ from main import
 def main(url):
     
     # Download data
-    project0.fetchincidents(url)
-    file=fetchincidents(url)
+    
+    file=project0.fetchincidents(url)
     
     # Extract Data
     incidents = project0.extractincidents(file)
