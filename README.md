@@ -7,11 +7,11 @@ We will be going through the steps taken to analyse the data, the assumptions ma
 
 ### Assumptions:
 1. Each of the column follows the following pattern:
-  a. The timestamp is given as mm/dd/yyyy hh:mm \n
-  b. The incident number is given in the form of 4x8 numbers seaprated by a (-) \n
-  c. The addresses always are given in caps \n
-  d. The nature of incident is a normal word which has a capital letter in the beginning and the rest is small (Eg: Norman) \n
-  e. The Incident_ori column contains any of these 4 cases: OK0140200, EMSSTAT, 14005 or 14009. \n
-  f. The files have no missing nature. All of the cases are assigned to some case. \n
+  * The timestamp is given as mm/dd/yyyy hh:mm 
+  * The incident number is given in the form of 4x8 numbers seaprated by a (-) 
+  * The addresses always are given in caps
+  * The nature of incident is a normal word which has a capital letter in the beginning and the rest is small (Eg: Norman) 
+  * The Incident_ori column contains any of these 4 cases: OK0140200, EMSSTAT, 14005 or 14009
+  * The files have no missing nature. All of the cases are assigned to some case
 
 ### 
