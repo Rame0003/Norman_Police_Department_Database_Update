@@ -1,3 +1,4 @@
+#Importing packages for smooth processing:
 import pandas as pd
 import numpy as np
 import math
@@ -19,7 +20,6 @@ from main import
 def main(url):
     
     # Download data
-    
     file=project0.fetchincidents(url)
     
     # Extract Data
@@ -36,10 +36,12 @@ def main(url):
 
 
 if __name__ == '__main__':
+#Initialize parser to parse URL into main function:
     parser = argparse.ArgumentParser()
+#Specifying start of string which should be parsed into the .py function
     parser.add_argument("--incidents", type=str, required=True, 
                          help="The arrest summary url.")
-     
+#Check to see if url contains the fields necessary for the program:
     args = parser.parse_args()
     if args.incidents:
         main(args.incidents)
