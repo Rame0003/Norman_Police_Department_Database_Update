@@ -48,6 +48,11 @@ Each of the column follows the following pattern:
 3. Some of the addresses are given in coordinates. These coordinates are separated by a `;~`. Such coordinates are also collected as a part of the address. Only a few coordinates which use the `~` to be separated cause the data to be misplaced. This occured only once when the code was run. 
 4. Missing values were encountered. Sometimes, the nature was not given at all. An issue with the PDF reader is that it does not read any white spaces, thus pulling the text from the next column into the respective column. This was countered by giving the `\n\n` charecter if something was amiss between the addresses and Incident_ori. 
 
+### Execution:
+ To run the program, use the pipenv command given below:
+ >pipenv run python project0/main.py --incidents <copied url>
+ This should provide you with the result. 
+
 # References:
 * https://stackoverflow.com/questions/29138054/how-to-replace-tabs-in-a-string/29138079
 * https://stackoverflow.com/questions/41220172/regex-to-splitstring-on-date-and-keep-it
