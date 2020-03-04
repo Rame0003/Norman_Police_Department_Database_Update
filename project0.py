@@ -145,16 +145,19 @@ def extractincidents(file):
     return data
     
 #Populate the database with the given dataframe
+
 def populatedb(df):
     conn = sqlite3.connect('normandb')
     df.to_sql('normandb', conn, if_exists='replace', index=False)
-    return df
-    
-    #Calling the status() function to execute the sql query delivering the result
-    status()
-    
-#Function to display the required result
+    #return df
+    testext=pd.read_sql('select count(*) from normandb',conn)
+    print (testext)
+#Function to display the required result    
 def status():
     conn = sqlite3.connect('normandb')
     result=pd.read_sql('select nature,count(nature) from normandb group by nature order by nature', conn)
-    print(result)  
+    result=pd.read_sql('select nature,count(*) as count from normandb group by nature', conn)
+    res=result["nature"] + "|" + result["count"].astype(str) 
+    print(res)  
+   
+   
