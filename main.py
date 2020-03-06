@@ -13,7 +13,7 @@ import re
 from tika import parser
 import sys
 import argparse
-import main
+import project0
 
 
 
