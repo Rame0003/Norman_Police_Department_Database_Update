@@ -1,5 +1,4 @@
-# cs5293p20-project0
-## Norman Police Department Database Update
+# Norman Police Department Database Update
 ### Introduction:
 This project aims to update the incidents and order them alphabetically. The program contains of 5 different steps to process the data from the PDF and pushing into the SQLite database that has been created. The final required result is to make sure that the nature of incidents is displayed along with the count. 
 
